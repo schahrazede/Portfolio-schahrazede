@@ -64,5 +64,25 @@ function tabsFilters() {
     })
   }
   
-  tabsFilters();
+tabsFilters();
+  // MODALE
+ document.addEventListener('DOMContentLoaded', function () {
+    const openModalButtons = document.querySelectorAll('.open-modal-button');
+    const modals = document.querySelectorAll('.modal');
+    const closeButton = document.querySelectorAll('.close-button');
+
+    openModalButtons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            modals[index].style.display = 'block';
+        });
+    });
+
+    closeButton.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            modals[index].style.display = 'none';
+        });
+    });
+});
+
+
 

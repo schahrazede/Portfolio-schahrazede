@@ -15,16 +15,14 @@
 
 <body>
     <header class="header">
-        <div class="container d-flex">
+        <div class="container d-flex size-header">
             <div class="logo">
                 <img src="./img/Cartoonify (1).png" alt="Schahrazede developpeuse web" class="color">
             </div>
             <nav class="navbar">
                 <ul class="menu">
-                    <!-- <li> <a href="#hero"> Acueil</a> </li> -->
                     <li> <a href="#about"> A propos</a> </li>
                     <li> <a href="#skills"> Compétence</a> </li>
-                    <!-- <li> <a href="#services"> Services</a> </li> -->
                     <li> <a href="#portfolio"> Portfolio</a> </li>
                     <li> <a href="#contact"> contact</a> </li>
                 </ul>
@@ -208,64 +206,127 @@
             <div class="grid">
                 <div class="grid__item">
                     <div class="card" data-category="frontend">
-                        <img src="https://picsum.photos/600/400?random=1" alt="titre de projets" class="card__image">
+                        <img src="./img/composition-booki.png" alt="titre de projets" class="card__image">
                         <div class="card__inner">
                             <h3 class="card__title">Création la page d'accueil d'une agence de voyage avec HTML & CSS
                             </h3>
                             <p class="category">Booki</p>
+                            <button class="open-modal-button">+</button>
                         </div>
                         <div class="card__overly"></div>
+
+                    </div>
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <span class="close-button">&times;</span>
+                            <h2>BOOKI</h2>
+                            <p><strong>Contexte</strong><br>
+                                Développement et intégration de l'interface front-end d'un site de location
+                                d’hébergements. Réalisé à partir d'une maquette Figma. Application entièrement
+                                responsive.
+                            </p>
+                            <p><strong>Téchnologie utilisé</strong>
+                                HTML CSS FIGMA </p>
+                            <p> <strong>Problématique/Résolution</strong><br>
+                                Il s'agissait d'un des premiers projets que je développais en responsive design donc
+                                je ne savais pas trop comment m'y prendre. Je me suis renseigné sur internet et me
+                                suis formé sur flexbox avec notamment Flexbox Froggy qui m'a permis de découvrir la
+                                propriété order qui m'a servit dans ce projet.</p>
+                        </div>
                     </div>
                 </div>
 
 
                 <div class="grid__item">
                     <div class="card" data-category="frontend">
-                        <img src="https://picsum.photos/600/400?random=2" alt="titre de projets" class="card__image">
+                        <img src="./img/soufie .png" alt="titre de projets" class="card__image">
                         <div class="card__inner">
                             <h3 class="card__title">Création une page web dynamique avec JavaScript</h3>
-                            <p class="category">Sofie </p>
+                            <p class="category">Sophie Bluel </p>
+                            <button class="open-modal-button">+</button>
                         </div>
                         <div class="card__overly"></div>
+                    </div>
+                    <div id="modal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close-button">&times;</span>
+                            <h2>Sophie Bluel</h2>
+                            <p><strong>Contexte</strong><br>
+                                ArchiWebos est une agence qui s'occupe de la conception du site portfolio d'une
+                                architecte d'intérieur. L'HTML de ce portoflio est déjà effectué mais il manque la
+                                partie
+                                Javascript pour rendre le site dynamique, c'est là que j'interviens.
+                            </p>
+                            <p><strong>Téchnologie utilisé</strong>
+                                Javascript node.js HTML CSS swagger API</p>
+                            <p> <strong>Problématique/Résolution</strong><br>
+                                les problèmes rencontrés comme par exemple le fait de devoir vérifier que l'utilisateur
+                                avait bien un token et qu'il s'agissait de l'admin pour lui permettre de modifier la
+                                galerie.</p>
+                        </div>
                     </div>
                 </div>
 
 
                 <div class="grid__item">
                     <div class="card" data-category="backend">
-                        <img src="https://picsum.photos/600/400?random=3" alt="titre de projets" class="card__image">
+                        <img src="./img/mon vieux grimoire.png" alt="titre de projets" class="card__image">
                         <div class="card__inner">
                             <h3 class="card__title">Développement le back-end d'un site de notation de livres</h3>
                             <p class="category">Mon Vieux Grimoire</p>
+                            <button class="open-modal-button">+</button>
                         </div>
                         <div class="card__overly">
 
                         </div>
                     </div>
-                </div>
-
-
-                <div class="grid__item">
-                    <div class="card" data-category="frontend">
-                        <img src="https://picsum.photos/600/400?random=4" alt="titre de projets" class="card__image">
-                        <div class="card__inner">
-                            <h3 class="card__title">Planification le développement du site d'un client</h3>
-                            <p class="category">Menu Maker by QUANTA</p>
+                    <div id="modal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close-button">&times;</span>
+                            <h2>Mon Vieux Grimoire</h2>
+                            <p><strong>Contexte</strong><br>
+                                Première expérience de développement du backend d'un site web. J'ai été chargé de
+                                développer l'API et le serveur pour faire fonctionner le front-end du site 'Mon Vieux
+                                Grimoire' qui permet à ses utilisateurs de s'enregistrer, ajouter les livres qu'ils
+                                souhaitent et les noter !
+                            </p>
+                            <p><strong>Téchnologie utilisé</strong>
+                                node.js mongoDB JavaScript nodemon green code Postman API </p>
+                            <p> <strong>Problématique/Résolution</strong><br>
+                                Il fallait sécuriser le site contre les injections</p>
                         </div>
-                        <div class="card__overly"></div>
                     </div>
                 </div>
-
-
                 <div class="grid__item">
                     <div class="card" data-category="frontend">
-                        <img src="https://picsum.photos/600/400?random=5" alt="titre de projets" class="card__image">
+                        <img src="./img/kaza.png" alt="titre de projets" class="card__image">
                         <div class="card__inner">
                             <h3 class="card__title">Création une application web de location immobilière avec React</h3>
                             <p class="category">KAZA</p>
+                            <button class="open-modal-button">+</button>
                         </div>
                         <div class="card__overly">
 
+                        </div>
+                    </div>
+                    <div id="modal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close-button">&times;</span>
+                            <h2>KAZA</h2>
+                            <p><strong>Contexte</strong><br>
+                                Découverte du framework / de la bibliothèque React afin de réaliser la nouvelle version
+                                du site web de Kasa qui propose des locations immobilières. J'ai pu me familiariser avec
+                                la notion et le développement des composants fonctionnels, ainsi que des props et faire
+                                quelques manipulations du state. J'ai aussi réalisé la partie CSS du site avec SASS en
+                                SCSS.
+                            </p>
+                            <p><strong>Téchnologie utilisé</strong>
+                                REACT Javascript nodeJs</p>
+                            <p> <strong>Problématique/Résolution</strong><br>
+                                Un des problèmes rencontré lors de ce projet était la mise en place de bonnes pratiques.
+                                Je n'en connaissais aucune et au final, j'ai fais la découverte d'énormément de bonnes
+                                pratiques en React comme par exemple, chercher à créer des composants réutilisables,
+                                l'utilisation de key ou encore la gestion des états.</p>
                         </div>
                     </div>
                 </div>
@@ -273,12 +334,29 @@
 
                 <div class="grid__item">
                     <div class="card" data-category="frontend">
-                        <img src="https://picsum.photos/600/400?random=6" alt="titre de projets" class="card__image">
+                        <img src="./img/mateus-campos-felipe-entreprise.webp" alt="titre de projets"
+                            class="card__image">
                         <div class="card__inner">
                             <h3 class="card__title">Débogage et Optimisation un site de photographe</h3>
                             <p class="category">Site Nina redccui</p>
+                            <button class="open-modal-button">+</button>
                         </div>
                         <div class="card__overly"></div>
+                    </div>
+                </div>
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <h2>Nina raducci</h2>
+                        <p><strong>Contexte</strong><br>
+                            Projet d'étude portant sur l'optimisation d'un site web. Retrait de jQuery et réécriture des
+                            éléments en JavaScript vanilla. Purge des elements inutiles de bootstrap.
+                        </p>
+                        <p><strong>Téchnologie utilisé</strong>
+                            JavaScript html css seo Wave Rich snippet</p>
+                        <p> <strong>Problématique/Résolution</strong><br>
+                            j'ai pas eu de Problématique j'ai compris le principe et j'ai réussi à realisé mon projet.
+                        </p>
                     </div>
                 </div>
             </div>
